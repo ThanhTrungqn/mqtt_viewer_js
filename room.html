@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Star Admin Free Bootstrap-4 Admin Dashboard Template</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="./vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="./vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="./vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="./vendors/icheck/skins/all.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="./images/favicon.png" />
+  <style>
+  .primary-color {
+    color : #308EE0;
+  }
+  .row .no-float {
+    display: table-cell;
+    float: none;
+  }
+
+  .background {
+    background-image: url(./images/bureau1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html">
+          <img src="images/logo.svg" alt="logo" />
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="index.html">
+          <img src="images/logo-mini.svg" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Schedule
+              <span class="badge badge-primary ml-1">New</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link">
+              <i class="mdi mdi-elevation-rise"></i>Reports</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="mdi mdi-bookmark-plus-outline"></i>Score</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <i class="mdi mdi-file-document-box"></i>
+              <span class="count">7</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              <div class="dropdown-item">
+                <p class="mb-0 font-weight-normal float-left">You have 7 unread mails
+                </p>
+                <span class="badge badge-info badge-pill float-right">View all</span>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">David Grey
+                    <span class="float-right font-weight-light small-text">1 Minutes ago</span>
+                  </h6>
+                  <p class="font-weight-light small-text">
+                    The meeting is cancelled
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">Tim Cook
+                    <span class="float-right font-weight-light small-text">15 Minutes ago</span>
+                  </h6>
+                  <p class="font-weight-light small-text">
+                    New product launch
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow">
+                  <h6 class="preview-subject ellipsis font-weight-medium text-dark"> Johnson
+                    <span class="float-right font-weight-light small-text">18 Minutes ago</span>
+                  </h6>
+                  <p class="font-weight-light small-text">
+                    Upcoming board meeting
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-bell"></i>
+              <span class="count">4</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item">
+                <p class="mb-0 font-weight-normal float-left">You have 4 new notifications
+                </p>
+                <span class="badge badge-pill badge-warning float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="mdi mdi-alert-circle-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-medium text-dark">Application Error</h6>
+                  <p class="font-weight-light small-text">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="mdi mdi-comment-text-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-medium text-dark">Settings</h6>
+                  <p class="font-weight-light small-text">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="mdi mdi-email-outline mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-medium text-dark">New user registration</h6>
+                  <p class="font-weight-light small-text">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown d-none d-xl-inline-block">
+            <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <span class="profile-text">Hello, Thanh Nguyen !</span>
+              <img class="img-xs rounded-circle" src="images/faces/face1.jpg" alt="Profile image">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <a class="dropdown-item p-0">
+                <div class="d-flex border-bottom">
+                  <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                    <i class="mdi mdi-bookmark-plus-outline mr-0 text-gray"></i>
+                  </div>
+                  <div class="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
+                    <i class="mdi mdi-account-outline mr-0 text-gray"></i>
+                  </div>
+                  <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                    <i class="mdi mdi-alarm-check mr-0 text-gray"></i>
+                  </div>
+                </div>
+              </a>
+              <a class="dropdown-item mt-2">
+                Manage Accounts
+              </a>
+              <a class="dropdown-item">
+                Change Password
+              </a>
+              <a class="dropdown-item">
+                Check Inbox
+              </a>
+              <a class="dropdown-item">
+                Sign Out
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav sticky-top">
+          <li class="nav-item nav-profile">
+            <div class="nav-link">
+              <div class="user-wrapper">
+                <div class="profile-image">
+                  <img src="images/faces/face1.jpg" alt="profile image">
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Thanh Nguyen</p>
+                  <div>
+                    <small class="designation text-muted">R&D Engineer</small>
+                    <span class="status-indicator online"></span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-success btn-block">New Indicateur
+                <i class="mdi mdi-plus"></i>
+              </button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="menu-icon mdi mdi-television"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Rapport detection</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <i class="menu-icon fa fa-drivers-license-o"></i>
+                  <a class="nav-link">Building</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" ">Etage</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./room.html">Room</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="menu-icon mdi mdi-backup-restore"></i>
+              <span class="menu-title">Manager indicateur</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="menu-icon mdi mdi-content-copy"></i>
+              <span class="menu-title">Setting</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="menu-icon mdi mdi-content-copy"></i>
+              <span class="menu-title">Add new user</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Add new Room</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-8 grid-margin stretch-card">
+              <div class="card shadow">
+                <div class="card-header" style="background-color:#ddd">
+                  <h3 class = "text-center primary-color">Live video of Room ThomasWatt chez Regus Rennes</h3>
+                </div>
+                <div class="card-body">
+                  <div style="width:100%;">
+                    <canvas class="background" id='canvas' width="570" height="400"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="text-center">Customer your viewer</h2>
+                  <form class="form-sample">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label class="col-form-label primary-color">Choose your Room</label>
+                        <div class="form-group row">
+                          <label class="col-sm-4 col-form-label">Your ID Room</label>
+                          <div class="col-sm-8">
+                            <select class="form-control">
+                              <option>B001E001S001</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label class="col-form-label primary-color">Select Date:</label>
+                        <div class="form-group row">
+                          <label class="col-sm-4 col-form-label">From:</label>
+                          <div class="col-sm-8">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="dd/mm/yyyy">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-4 col-form-label">To:</label>
+                          <div class="col-sm-8">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="dd/mm/yyyy">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label class="col-form-label primary-color">Customer viewer</label>
+                        <div class="form-group row">
+                          <div class="col-md-6 form-group">
+                            <label for="exampleInputEmail1">Rotation</label>        
+                            <select class="form-control">
+                              <option>Defaut</option>
+                              <option>0</option>
+                              <option>90</option>
+                              <option>180</option>
+                              <option>270</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 form-group">
+                            <label for="exampleInputEmail1">Miroir</label>        
+                            <select class="form-control">
+                              <option>Defaut</option>
+                              <option>Vertical</option>
+                              <option>Horizontal</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 form-group">
+                            <label for="exampleInputEmail1">Type Affiche</label>        
+                            <select class="form-control">
+                              <option>Live video</option>
+                              <option>Heatmap</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 form-group">
+                            <label for="exampleInputEmail1">Zone interet</label>        
+                            <select class="form-control">
+                              <option>Yes</option>
+                              <option>No</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-fw">Connect</button>
+                        <button type="button" class="btn btn-primary btn-fw">Stop</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="text-center">Information Occupation of Zone Interet of last week 8/4-14/4 From 7h00 - 22h00</h4>
+                  <canvas id="lineChart1" style="height:350px"></canvas>
+                  <div class=row>
+                    <div class="col-lg-12 grid-margin stretch-card">
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>
+                                #
+                              </th>
+                              <th>
+                                Zone
+                              </th>
+                              <th>
+                                Type
+                              </th>
+                              <th>
+                                Daily
+                              </th>
+                              <th>
+                                Temps Weekly
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Thanh</td>
+                              <td>Bureau</td>
+                              <td>91%</td>
+                              <td>36,5h</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Mehdi</td>
+                              <td>Bureau</td>
+                              <td>91%</td>
+                              <td>36,5h</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Teddy</td>
+                              <td>Bureau</td>
+                              <td>31%</td>
+                              <td>12,3h</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>Julie</td>
+                              <td>Bureau</td>
+                              <td>41%</td>
+                              <td>16.3h</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card" style="background-color: #ffe0cc">
+                <div class="card-body">
+                  <h4 class="text-center">Information Presence in this Room From 7h00 - 22h00 in Mars</h4>
+                  <canvas id="lineChart2" style="height:350px"></canvas>
+                  <div class=row>
+                    <div class="col-sm-6 grid-margin stretch-card">
+                      <div class="card card-statistics ">
+                        <div class="card-body py-1">
+                          <div class="clearfix">
+                            <div class="float-left">
+                              <i class="mdi mdi-receipt text-warning icon-lg"></i>
+                            </div>
+                            <div class="float-right">
+                              <p class="mb-0 text-right">Temp presence Weekly</p>
+                              <div class="fluid-container">
+                                <h3 class="font-weight-medium text-right mb-0">41h30</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="text-muted mt-3 mb-0">
+                            <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i>Soit 8h30/day
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 grid-margin stretch-card">
+                      <div class="card card-statistics">
+                        <div class="card-body py-1">
+                          <div class="clearfix">
+                            <div class="float-left">
+                              <i class="mdi mdi-receipt text-warning icon-lg"></i>
+                            </div>
+                            <div class="float-right">
+                              <p class="mb-0 text-right">Detect 1 - 2 person</p>
+                              <div class="fluid-container">
+                                <h3 class="font-weight-medium text-right mb-0">36h</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="text-muted mt-3 mb-0">
+                            <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i>Soit 90% du temps presence
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 grid-margin stretch-card">
+                      <div class="card card-statistics">
+                        <div class="card-body py-1">
+                          <div class="clearfix">
+                            <div class="float-left">
+                              <i class="mdi mdi-receipt text-warning icon-lg"></i>
+                            </div>
+                            <div class="float-right">
+                              <p class="mb-0 text-right">Detect 3 - 4 person</p>
+                              <div class="fluid-container">
+                                <h3 class="font-weight-medium text-right mb-0">4h</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="text-muted mt-3 mb-0">
+                            <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i>Soit 10% du temps presence
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 grid-margin stretch-card">
+                      <div class="card card-statistics">
+                        <div class="card-body py-1">
+                          <div class="clearfix">
+                            <div class="float-left">
+                              <i class="mdi mdi-receipt text-warning icon-lg"></i>
+                            </div>
+                            <div class="float-right">
+                              <p class="mb-0 text-right">Detect >4 person</p>
+                              <div class="fluid-container">
+                                <h3 class="font-weight-medium text-right mb-0">0h</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="text-muted mt-3 mb-0">
+                            <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i>Soit 0% du temps presence
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="text-center primary-color">Information Confort from 01-31/03</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="text-center">Temperature when detect presence</h4>
+                  <canvas id="pie-chart1" style="width:200px;height:150px"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="text-center">Luminosity when detect presence</h4>
+                  <canvas id="pie-chart2" style="width:200px;height:150px"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="text-center">Noise when detect presence</h4>
+                  <canvas id="pie-chart3" style="width:200px;height:150px"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="./vendors/js/vendor.bundle.base.js"></script>
+  <script src="./vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="./js/off-canvas.js"></script>
+  <script src="./js/misc.js"></script>
+  <script src="./js/mqttws31.js"></script>
+  <script src="./js/mqttconnect.js"></script>
+  <script src="./js/chart.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>
