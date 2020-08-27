@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Star Admin Free Bootstrap-4 Admin Dashboard Template</title>
+
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script src="./js/mqttws31.js"></script>
+  <script src="./js/mqttrealtime_32_32.js"></script>
+  <style>
+    .left {
+      width: 25%;
+      float: left;
+      padding: 15px;
+    }
+    .right {
+      width: 70%;
+      float: left;
+      padding: 15px;
+    }
+  </style>
+
+</head>
+
+<body>
+	<button onclick="button_connect()"> Start me</button>
+	<button onclick="button_stop()"> Stop me</button>
+  <div>
+	  <div class="left">
+      <p id ="max_value" style="font-size:1.5em"></p>
+      <p id ="min_value" style="font-size:1.5em"></p>
+      <p id ="id_image" style="font-size:1.5em">Number Image 0</p>
+ 
+    </div>
+    <div class="right">
+      <canvas id="stream32_32" width="640" height="640" style="border:1px solid"></canvas>
+    </div>
+</body>
+
+</html>
