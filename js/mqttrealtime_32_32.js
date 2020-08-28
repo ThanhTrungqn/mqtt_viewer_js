@@ -23,8 +23,10 @@ client.onMessageArrived = function (message) {
 	count++;
 	console.log(message.payloadString);
 	var json_data = JSON.parse(message.payloadString);
-	var json_data_array = json_data['image'];
-	draw_canvas(json_data_array);
+	var json_data_array1 = json_data['image1'];
+	var json_data_array2 = json_data['image2'];
+	draw_canvas(json_data_array1);
+	draw_canvas2(json_data_array2);
 	document.getElementById("id_image").innerHTML = "Number Image" + count;
 };
 
@@ -128,8 +130,28 @@ function draw_canvas(array1) {
 	document.getElementById("max_value").innerHTML = "Max " + max_array;
 	document.getElementById("min_value").innerHTML = "Min " + min_array;
 }
+function draw_canvas2(array1) {
+	var max_array = Math.max(...array1);
+	var min_array = Math.min(...array1);
+	var width_pixel = 20;
+	var height_pixel = 20;
+	var c = document.getElementById("stream32_32_2");
+	var ctx = c.getContext("2d");
+	ctx.clearRect(0, 0, c.width, c.height);
+
+	for (var x = 0; x < 32; x++) {
+		for (var y = 0; y < 32; y++) {
+			var value = array1[y * 32 + x];
+			ctx.fillStyle = getColour_2(min_array, max_array, value);
+			ctx.fillRect(x * width_pixel, y * height_pixel, width_pixel, height_pixel);
+		}
+	}
+	document.getElementById("max_value_2").innerHTML = "Max " + max_array;
+	document.getElementById("min_value_2").innerHTML = "Min " + min_array;
+}
 //*****************************************************************//
 
 $(document).ready(function () {
 	draw_canvas(array2);
+	draw_canvas2(array2);
 });

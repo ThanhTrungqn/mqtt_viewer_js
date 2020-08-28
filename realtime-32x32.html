@@ -12,12 +12,12 @@
   <script src="./js/mqttrealtime_32_32.js"></script>
   <style>
     .left {
-      width: 25%;
+      width: 10%;
       float: left;
       padding: 15px;
     }
     .right {
-      width: 70%;
+      width: 40%;
       float: left;
       padding: 15px;
     }
@@ -30,13 +30,20 @@
 	<button onclick="button_stop()"> Stop me</button>
   <div>
 	  <div class="left">
+      <p>View 1</p>
       <p id ="max_value" style="font-size:1.5em"></p>
       <p id ="min_value" style="font-size:1.5em"></p>
       <p id ="id_image" style="font-size:1.5em">Number Image 0</p>
+      <p>View 2</p>
+      <p id ="max_value_2" style="font-size:1.5em"></p>
+      <p id ="min_value_2" style="font-size:1.5em"></p>
  
     </div>
     <div class="right">
       <canvas id="stream32_32" width="640" height="640" style="border:1px solid"></canvas>
+    </div>
+    <div class="right">
+      <canvas id="stream32_32_2" width="640" height="640" style="border:1px solid"></canvas>
     </div>
 </body>
 
